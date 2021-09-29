@@ -1,13 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/myCustom.css">
+
     <title>Carrito de Compras</title>
+
 </head>
+
 <body>
-    
+    <header class="header_container">
+
+        <!--DISEÑO LA NAVBAR RESONSIVE CON EL MENU AMBURGUESA  -->
+
+        <nav class="navbarHome navbar | navbar-expand-lg | navbar-light | bg-light">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" | type="button" | data-bs-toggle="collapse" | data-bs-target="#navbarNav" | aria-controls="navbarNav" | aria-expanded="false" | aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-3 justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ENTRO A DISEÑAR EL CARRITO DE COMPRAS QUE ME MUESTRA LO QUE ESTOY COMPRANDO -->
+                <div>                <ul class="list-unstyle">
+                    <li class="submenu">
+                        <img src="/img/cart.png" id="img-carrito" alt="">
+                        <!-- ID= "CARRITO" ARRANCA LA TABLA DONDE CARGAMOS LOS PRODUCTOS QUE COMPRAMOS -->
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <!-- thead se utiliza para agrupar el contenido del encabezado de una tabla -->
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <!-- DONDE COMPLETAMOS LOS DATOS DEL PRODUCTO QUE COMPRAMOS -->
+                                <tbody></tbody>
+                            </table>
+                            <!-- <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     
+
+    </header>
+
+   <div class="headerlmagen">
+
+   </div>
+<!-- ARRANCAN LOS DIV CON LAS CARD DE LOS PRODUCTOS ID="LISTA-PRODUCTOS" -->
+<section class="container justiy-content-center p-5" id="lista-productos">
+    <div class="row justify-content-center flex-lg-nowrap">
+        <div class="col-sm-12 col-md-4 col-lg-3 m-4">
+            <div class="card">
+                <img class="card-img-top img-80 p-4" src="img/empresa1.jpg" alt="Card image cap">
+
+                <div class="card-body text-center">
+                    <h6 class="nombre-producto">Nombre Producto</h6>
+                    <p class="card-text p-2 mr-4">Some quick example text to build on the card title and make.</p>
+                    <p class="precio">$500</p>
+                    <a href="#" class="u-full-width btn btn-pink button input agregar-carrito" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 m-4">
+            <div class="card">
+                <img class="card-img-top img-80 p-4" src="img/empresa1.jpg" alt="Card image cap">
+
+                <div class="card-body text-center">
+                    <h6 class="nombre-producto">Nombre Producto</h6>
+                    <p class="card-text p-2 mr-4">Some quick example text to build on the card title and make.</p>
+                    <p class="precio">$500</p>
+                    <a href="#" class="u-full-width btn btn-pink button input agregar-carrito" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 m-4">
+            <div class="card">
+                <img class="card-img-top img-80 p-4" src="img/empresa1.jpg" alt="Card image cap">
+
+                <div class="card-body text-center">
+                    <h6 class="nombre-producto">Nombre Producto</h6>
+                    <p class="card-text p-2 mr-4">Some quick example text to build on the card title and make.</p>
+                    <p class="precio">$500</p>
+                    <a href="#" class="u-full-width btn btn-pink button input agregar-carrito" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 m-4">
+            <div class="card">
+                <img class="card-img-top img-80 p-4" src="img/empresa1.jpg" alt="Card image cap">
+
+                <div class="card-body text-center">
+                    <h6 class="nombre-producto">Nombre Producto</h6>
+                    <p class="card-text p-2 mr-4">Some quick example text to build on the card title and make.</p>
+                    <p class="precio">$500</p>
+                    <a href="#" class="u-full-width btn btn-pink button input agregar-carrito" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Mobile Firt-Responsive
+</footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>  
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/myScript.js"></script>
 </body>
+
 </html>

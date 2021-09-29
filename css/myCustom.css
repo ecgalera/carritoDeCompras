@@ -1,0 +1,51 @@
+body{
+    background-color:azure
+}
+
+.navbar-light.navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #dd2ec0b3;
+}
+
+.img-80{
+    width: 80%;
+    align-self: center;
+}
+
+.btn-pink{
+    color:#fff;
+    background-color: #d200ae;
+    border-color:#d200ae
+
+}
+
+.headerlmagen{
+    background-image: url("../img/slider-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 40vh;
+}
+
+.submenu{
+    position:relative;
+}
+
+.submenu, img{
+    padding-right: 1rem;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position:absolute;
+    right:0;
+    top:100%;
+    z-index:1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
